@@ -285,13 +285,19 @@ function formatInline(text: string) {
 }
 
 function downloadText(content: string, filename: string) {
-  const blob = new Blob([content], { type: 'text/plain' })
+  if (!content) return
+  const blob = new Blob([content], { type: 'text/plain;charset=utf-8' })
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
   a.download = filename
+  a.style.display = 'none'
+  document.body.appendChild(a)
   a.click()
-  URL.revokeObjectURL(url)
+  setTimeout(() => {
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+  }, 100)
 }
 
 function ResumeSetupScreen({
