@@ -1,0 +1,75 @@
+{
+  "agent_id": "698f39ec78357a0e3473e9bd",
+  "agent_name": "Job Application Manager",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "AgentResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string" },
+          "job_title": { "type": "string" },
+          "company_name": { "type": "string" },
+          "resume_output": {
+            "type": "object",
+            "properties": {
+              "optimized_resume": { "type": "string" },
+              "key_changes": { "type": "array", "items": { "type": "string" } },
+              "keyword_matches": { "type": "array", "items": { "type": "string" } },
+              "optimization_score": { "type": "string" },
+              "additional_suggestions": { "type": "array", "items": { "type": "string" } }
+            },
+            "required": ["optimized_resume", "key_changes", "keyword_matches", "optimization_score", "additional_suggestions"],
+            "additionalProperties": false
+          },
+          "cover_letter_output": {
+            "type": "object",
+            "properties": {
+              "cover_letter": { "type": "string" },
+              "key_highlights": { "type": "array", "items": { "type": "string" } },
+              "tone": { "type": "string" },
+              "word_count": { "type": "string" }
+            },
+            "required": ["cover_letter", "key_highlights", "tone", "word_count"],
+            "additionalProperties": false
+          },
+          "company_research_output": {
+            "type": "object",
+            "properties": {
+              "company_overview": { "type": "string" },
+              "products_services": { "type": "array", "items": { "type": "string" } },
+              "recent_news": { "type": "array", "items": { "type": "string" } },
+              "company_culture": { "type": "string" },
+              "relevant_projects": { "type": "array", "items": { "type": "string" } },
+              "talking_points": { "type": "array", "items": { "type": "string" } },
+              "potential_fit": { "type": "string" }
+            },
+            "required": ["company_overview", "products_services", "recent_news", "company_culture", "relevant_projects", "talking_points", "potential_fit"],
+            "additionalProperties": false
+          },
+          "interview_prep_output": {
+            "type": "object",
+            "properties": {
+              "behavioral_questions": { "type": "array", "items": { "type": "string" } },
+              "technical_questions": { "type": "array", "items": { "type": "string" } },
+              "role_specific_questions": { "type": "array", "items": { "type": "string" } },
+              "suggested_talking_points": { "type": "array", "items": { "type": "string" } },
+              "questions_to_ask": { "type": "array", "items": { "type": "string" } },
+              "interview_tips": { "type": "array", "items": { "type": "string" } },
+              "preparation_summary": { "type": "string" }
+            },
+            "required": ["behavioral_questions", "technical_questions", "role_specific_questions", "suggested_talking_points", "questions_to_ask", "interview_tips", "preparation_summary"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["status", "job_title", "company_name", "resume_output", "cover_letter_output", "company_research_output", "interview_prep_output"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

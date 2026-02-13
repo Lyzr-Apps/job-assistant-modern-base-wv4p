@@ -1,0 +1,25 @@
+{
+  "agent_id": "698f39c3bfc1a00f734aa66f",
+  "agent_name": "Cover Letter Agent",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "AgentResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "cover_letter": { "type": "string" },
+          "key_highlights": { "type": "array", "items": { "type": "string" } },
+          "tone": { "type": "string" },
+          "word_count": { "type": "string" }
+        },
+        "required": ["cover_letter", "key_highlights", "tone", "word_count"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

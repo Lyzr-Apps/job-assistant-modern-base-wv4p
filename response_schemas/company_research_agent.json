@@ -1,0 +1,28 @@
+{
+  "agent_id": "698f39c3952d465a4da7dc1d",
+  "agent_name": "Company Research Agent",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "AgentResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "company_overview": { "type": "string" },
+          "products_services": { "type": "array", "items": { "type": "string" } },
+          "recent_news": { "type": "array", "items": { "type": "string" } },
+          "company_culture": { "type": "string" },
+          "relevant_projects": { "type": "array", "items": { "type": "string" } },
+          "talking_points": { "type": "array", "items": { "type": "string" } },
+          "potential_fit": { "type": "string" }
+        },
+        "required": ["company_overview", "products_services", "recent_news", "company_culture", "relevant_projects", "talking_points", "potential_fit"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

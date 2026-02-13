@@ -1,0 +1,136 @@
+{
+  "agent_name": "Job Application Manager",
+  "agent_id": "698f39ec78357a0e3473e9bd",
+  "description": "Coordinates all sub-agents, distributes job details, aggregates final outputs into comprehensive application package",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "status": "string",
+    "job_title": "string",
+    "company_name": "string",
+    "resume_output": {
+      "optimized_resume": "string",
+      "key_changes": [
+        "string"
+      ],
+      "keyword_matches": [
+        "string"
+      ],
+      "optimization_score": "string",
+      "additional_suggestions": [
+        "string"
+      ]
+    },
+    "cover_letter_output": {
+      "cover_letter": "string",
+      "key_highlights": [
+        "string"
+      ],
+      "tone": "string",
+      "word_count": "string"
+    },
+    "company_research_output": {
+      "company_overview": "string",
+      "products_services": [
+        "string"
+      ],
+      "recent_news": [
+        "string"
+      ],
+      "company_culture": "string",
+      "relevant_projects": [
+        "string"
+      ],
+      "talking_points": [
+        "string"
+      ],
+      "potential_fit": "string"
+    },
+    "interview_prep_output": {
+      "behavioral_questions": [
+        "string"
+      ],
+      "technical_questions": [
+        "string"
+      ],
+      "role_specific_questions": [
+        "string"
+      ],
+      "suggested_talking_points": [
+        "string"
+      ],
+      "questions_to_ask": [
+        "string"
+      ],
+      "interview_tips": [
+        "string"
+      ],
+      "preparation_summary": "string"
+    }
+  },
+  "example_response": {
+    "status": "sample string",
+    "job_title": "sample string",
+    "company_name": "sample string",
+    "resume_output": {
+      "optimized_resume": "sample string",
+      "key_changes": [
+        "sample string"
+      ],
+      "keyword_matches": [
+        "sample string"
+      ],
+      "optimization_score": "sample string",
+      "additional_suggestions": [
+        "sample string"
+      ]
+    },
+    "cover_letter_output": {
+      "cover_letter": "sample string",
+      "key_highlights": [
+        "sample string"
+      ],
+      "tone": "sample string",
+      "word_count": "sample string"
+    },
+    "company_research_output": {
+      "company_overview": "sample string",
+      "products_services": [
+        "sample string"
+      ],
+      "recent_news": [
+        "sample string"
+      ],
+      "company_culture": "sample string",
+      "relevant_projects": [
+        "sample string"
+      ],
+      "talking_points": [
+        "sample string"
+      ],
+      "potential_fit": "sample string"
+    },
+    "interview_prep_output": {
+      "behavioral_questions": [
+        "sample string"
+      ],
+      "technical_questions": [
+        "sample string"
+      ],
+      "role_specific_questions": [
+        "sample string"
+      ],
+      "suggested_talking_points": [
+        "sample string"
+      ],
+      "questions_to_ask": [
+        "sample string"
+      ],
+      "interview_tips": [
+        "sample string"
+      ],
+      "preparation_summary": "sample string"
+    }
+  }
+}

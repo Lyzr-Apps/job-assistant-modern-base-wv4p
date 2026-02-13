@@ -1,0 +1,28 @@
+{
+  "agent_id": "698f39c40585dc1815076fb9",
+  "agent_name": "Interview Prep Agent",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "AgentResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "behavioral_questions": { "type": "array", "items": { "type": "string" } },
+          "technical_questions": { "type": "array", "items": { "type": "string" } },
+          "role_specific_questions": { "type": "array", "items": { "type": "string" } },
+          "suggested_talking_points": { "type": "array", "items": { "type": "string" } },
+          "questions_to_ask": { "type": "array", "items": { "type": "string" } },
+          "interview_tips": { "type": "array", "items": { "type": "string" } },
+          "preparation_summary": { "type": "string" }
+        },
+        "required": ["behavioral_questions", "technical_questions", "role_specific_questions", "suggested_talking_points", "questions_to_ask", "interview_tips", "preparation_summary"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

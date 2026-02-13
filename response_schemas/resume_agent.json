@@ -1,0 +1,26 @@
+{
+  "agent_id": "698f39d306705e6c39481b96",
+  "agent_name": "Resume Optimizer Agent",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "AgentResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "optimized_resume": { "type": "string" },
+          "key_changes": { "type": "array", "items": { "type": "string" } },
+          "keyword_matches": { "type": "array", "items": { "type": "string" } },
+          "optimization_score": { "type": "string" },
+          "additional_suggestions": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["optimized_resume", "key_changes", "keyword_matches", "optimization_score", "additional_suggestions"],
+        "additionalProperties": false
+      }
+    }
+  }
+}
